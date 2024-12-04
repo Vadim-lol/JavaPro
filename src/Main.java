@@ -1,10 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
+        Cat cat = new Cat("Tom");
+        cat.run(201);
+        cat.swim(10);
+
+        Dog dog = new Dog("Jack");
+        dog.run(201);
+        dog.swim(10);
+
+
+        Dog dog2 = new Dog("Snickers");
+        dog2.run(600);
+        dog2.swim(200);
+
+        System.out.println(Cat.getCatNumber());
+        System.out.println(Dog.getDogNumber());
+        System.out.println(Animal.getAllAnimalNumber());
     }
 }
